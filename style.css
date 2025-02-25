@@ -24,7 +24,7 @@ header {
     width: 100%;
     top: 0;
     z-index: 1000;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }
 
 nav {
@@ -128,25 +128,84 @@ nav {
     color: var(--primary-color);
 }
 
-/* Teams Slider */
-.teams-slider {
-    display: flex;
-    overflow-x: auto;
-    padding: 20px;
-    gap: 15px;
+/* ======= TEAMS GRID STYLING ======= */
+.teams-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Two teams per row */
+    gap: 40px; /* Increased spacing */
+    justify-content: center;
+    margin-top: 40px;
+    padding: 40px;
 }
 
-.team {
-    background: var(--secondary-color);
-    padding: 20px;
-    border-radius: 10px;
-    min-width: 250px;
+/* ======= TEAM CARD ======= */
+.team-card {
+    background: white;
+    padding: 40px;
+    border-radius: 20px;
     text-align: center;
-    transition: transform 0.3s;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
 
-.team:hover {
+.team-card:hover {
     transform: scale(1.05);
+    box-shadow: 0px 10px 25px rgba(255, 0, 0, 0.8);
+}
+
+/* ======= TEAM HEADER ======= */
+.team-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 15px;
+    position: relative;
+}
+
+/* Vertical Team Line */
+.team-line {
+    width: 6px;
+    height: 30px;
+    background: red;
+}
+
+/* Adjusted Logo Size */
+.team-logo {
+    width: 50px;
+    height: auto;
+    padding: 6px;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(255, 0, 0, 0.6);
+}
+
+/* ======= DRIVERS ======= */
+.drivers {
+    display: flex;
+    justify-content: space-between;
+    font-size: 20px;
+    font-weight: bold;
+    color: black;
+    padding-bottom: 10px;
+}
+
+/* ======= TEAM CAR IMAGE ======= */
+.team-car {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-top: 15px;
+}
+
+/* ======= CENTERED TITLE ======= */
+.teams-list h2 {
+    text-align: center;
+    font-size: 42px;
+    font-weight: bold;
+    color: red;
+    text-transform: uppercase;
+    margin-bottom: 20px;
 }
 
 /* Team Sections */
@@ -172,6 +231,94 @@ nav {
     border-radius: 0;
     display: block;
 }
+
+/* ======= TEAMS INFO SECTION ======= */
+.teams-info {
+    padding: 100px 0;
+    color: var(--text-color);
+    position: relative;
+    text-align: center;
+    overflow: hidden;
+}
+
+.teams-info .neon-title {
+    font-size: 42px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: red;
+    text-shadow: 0 0 10px red, 0 0 20px red, 0 0 30px rgba(255, 0, 0, 0.5);
+    margin-bottom: 20px;
+}
+
+.teams-subtitle {
+    font-size: 18px;
+    max-width: 800px;
+    margin: 0 auto 50px;
+    color: var(--accent-color);
+    font-weight: 300;
+}
+
+/* ======= TEAM SECTION ======= */
+.team-section {
+    background: rgba(20, 20, 20, 0.85);
+    padding: 30px;
+    margin: 30px auto;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0px 10px 30px rgba(255, 0, 0, 0.2);
+    width: 80%;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.team-section:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 12px 35px rgba(255, 0, 0, 0.5);
+}
+
+/* ======= TEAM HEADER ======= */
+.team-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 15px;
+}
+
+.team-logo {
+    width: 80px;
+    height: auto;
+    filter: drop-shadow(0 0 10px rgba(255, 0, 0, 0.5));
+}
+
+.team-name {
+    font-size: 28px;
+    color: var(--primary-color);
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+/* ======= TEAM INFO ======= */
+.team-info {
+    text-align: left;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.team-info p {
+    font-size: 18px;
+    margin: 10px 0;
+    font-weight: 400;
+    color: var(--text-color);
+    border-left: 4px solid var(--primary-color);
+    padding-left: 10px;
+    transition: all 0.3s ease-in-out;
+}
+
+.team-info p:hover {
+    color: red;
+    border-left-color: white;
+}
+
 
 /* ======= Driver Sections ======= */
 .staff {
@@ -677,7 +824,6 @@ nav {
     position: absolute;
     width: 100%;
     height: 100%;
-    background: url('img/grid-pattern.png') repeat;
     opacity: 0.2;
     top: 0;
     left: 0;
