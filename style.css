@@ -175,6 +175,118 @@ nav {
     display: block; /* Ensures no extra spacing around the image */
 }
 
+/* ======= Driver Sections ======= */
+.staff {
+    padding: 80px 0;
+    background-color: var(--secondary-color);
+    color: var(--text-color);
+}
+
+.staff .container-fluid {
+    padding: 0 60px;
+}
+
+/* ======= Driver 1 Configuration (Image on Left, Facts on Right) ======= */
+.driver-1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+.driver-1 .driver-image {
+    width: 60%;
+    height: 440px;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    order: 1;
+}
+
+.driver-1 .driver-facts {
+    width: 60%;
+    padding: 20px;
+    order: 2;
+}
+
+/* ======= Driver 2 Configuration (Facts on Left, Image on Right) ======= */
+.driver-2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+.driver-2 .driver-image {
+    width: 60%;
+    height: 440px;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    order: 2;
+}
+
+.driver-2 .driver-facts {
+    width: 60%;
+    padding: 20px;
+    order: 1;
+}
+
+/* ======= Accordion Styling ======= */
+.accordion {
+    margin-top: 20px;
+}
+
+.accordion-item {
+    background-color: var(--background-color);
+    border: 1px solid var(--accent-color);
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.accordion-header {
+    background: var(--primary-color);
+    color: white;
+}
+
+.accordion-button {
+    background: var(--primary-color);
+    color: white;
+    font-weight: bold;
+    padding: 15px;
+    text-align: left;
+    border: none;
+}
+
+.accordion-button:hover {
+    background: var(--button-gradient);
+}
+
+.accordion-body {
+    background: var(--secondary-color);
+    color: var(--text-color);
+    padding: 15px;
+    font-size: 16px;
+}
+
+.question-icon {
+    color: var(--accent-color);
+    margin-right: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 992px) {
+    .driver-1, .driver-2 {
+        flex-direction: column;
+    }
+
+    .driver-1 .driver-image, .driver-2 .driver-image,
+    .driver-1 .driver-facts, .driver-2 .driver-facts {
+        width: 100%;
+    }
+}
+
 
 .driver-info {
     background: var(--accent-color);

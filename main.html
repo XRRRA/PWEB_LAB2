@@ -14,7 +14,7 @@
 <header>
     <nav>
         <div class="logo">
-            <img src="f1-logo.png" alt="F1 Logo">
+            <img src="img/f1-logo.png" alt="F1 Logo">
             F1 World
         </div>
         <div class="nav-links">
@@ -52,8 +52,6 @@
 
 <section id="top-teams">
     <div class="container">
-        <h2>Top 3 Teams</h2>
-
         <!-- Ferrari Section -->
         <div class="team-section" id="ferrari">
             <h3>Ferrari</h3>
@@ -65,18 +63,116 @@
                 <p><strong>Chassis:</strong> SF-25</p>
                 <p><strong>World Championships:</strong> 16</p>
             </div>
-            <div class="driver-info">
-                <img src="charles-leclerc.jpg" alt="Charles Leclerc">
-                <p><strong>Charles Leclerc</strong> - Monaco</p>
-                <p><strong>Podiums:</strong> 43</p>
-                <p><strong>Points:</strong> 1430</p>
-            </div>
-            <div class="driver-info">
-                <img src="lewis-hamilton.jpg" alt="Lewis Hamilton">
-                <p><strong>Lewis Hamilton</strong> - United Kingdom</p>
-                <p><strong>Podiums:</strong> 202</p>
-                <p><strong>Points:</strong> 4862.5</p>
-            </div>
+            <!-- ======= Charles Leclerc Section (Driver 1 Config) ======= -->
+            <section id="leclerc" class="staff">
+                <div class="container-fluid" data-aos="fade-up">
+                    <div class="driver-1">
+                        <div class="driver-image" style='background-image: url("img/leclerc.avif");'></div>
+                        <div class="driver-facts">
+                            <h3>Our drivers: <strong>CHARLES LECLERC</strong></h3>
+                            <div class="accordion accordion-flush" id="leclerc-facts">
+                                <div class="accordion-item">
+                                    <h3 class="accordion-header">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#leclerc-fact-1">
+                                            <i class="bi bi-question-circle question-icon"></i>
+                                            FACT 1 - Monaco's Racing Star
+                                        </button>
+                                    </h3>
+                                    <div id="leclerc-fact-1" class="accordion-collapse collapse" data-bs-parent="#leclerc-facts">
+                                        <div class="accordion-body">
+                                            Charles Leclerc is the first Monegasque driver to win a Formula 1 Grand Prix.
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="accordion-item">
+                                    <h3 class="accordion-header">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#leclerc-fact-2">
+                                            <i class="bi bi-question-circle question-icon"></i>
+                                            FACT 2 - Karting Prodigy
+                                        </button>
+                                    </h3>
+                                    <div id="leclerc-fact-2" class="accordion-collapse collapse" data-bs-parent="#leclerc-facts">
+                                        <div class="accordion-body">
+                                            Leclerc dominated the junior karting scene and was part of Ferrari's Driver Academy.
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="accordion-item">
+                                    <h3 class="accordion-header">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#leclerc-fact-3">
+                                            <i class="bi bi-question-circle question-icon"></i>
+                                            FACT 3 - Fastest Pole Position
+                                        </button>
+                                    </h3>
+                                    <div id="leclerc-fact-3" class="accordion-collapse collapse" data-bs-parent="#leclerc-facts">
+                                        <div class="accordion-body">
+                                            He holds the record for the fastest recorded pole lap in F1 history at Monza 2019.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ======= Lewis Hamilton Section (Driver 2 Config) ======= -->
+            <section id="hamilton" class="staff">
+                <div class="container-fluid" data-aos="fade-up">
+                    <div class="driver-2">
+                        <!-- Facts on the Left -->
+                        <div class="driver-facts">
+                            <h3>Our drivers: <strong>LEWIS HAMILTON</strong></h3>
+                            <div class="accordion accordion-flush" id="hamilton-facts">
+                                <div class="accordion-item">
+                                    <h3 class="accordion-header">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#hamilton-fact-1">
+                                            <i class="bi bi-question-circle question-icon"></i>
+                                            FACT 1 - 7-Time World Champion
+                                        </button>
+                                    </h3>
+                                    <div id="hamilton-fact-1" class="accordion-collapse collapse" data-bs-parent="#hamilton-facts">
+                                        <div class="accordion-body">
+                                            Hamilton is tied with Michael Schumacher for the most world championships in F1 history.
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="accordion-item">
+                                    <h3 class="accordion-header">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#hamilton-fact-2">
+                                            <i class="bi bi-question-circle question-icon"></i>
+                                            FACT 2 - Most Pole Positions
+                                        </button>
+                                    </h3>
+                                    <div id="hamilton-fact-2" class="accordion-collapse collapse" data-bs-parent="#hamilton-facts">
+                                        <div class="accordion-body">
+                                            He holds the record for the most pole positions in F1, securing over 100 poles.
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="accordion-item">
+                                    <h3 class="accordion-header">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#hamilton-fact-3">
+                                            <i class="bi bi-question-circle question-icon"></i>
+                                            FACT 3 - Off-Track Influence
+                                        </button>
+                                    </h3>
+                                    <div id="hamilton-fact-3" class="accordion-collapse collapse" data-bs-parent="#hamilton-facts">
+                                        <div class="accordion-body">
+                                            Hamilton is known for his activism, supporting diversity and environmental causes.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="driver-image" style='background-image: url("img/hamilton.avif");'></div>
+                    </div>
+                </div>
+            </section>
         </div>
 
         <!-- McLaren Section -->
@@ -90,18 +186,116 @@
                 <p><strong>Chassis:</strong> MCL39</p>
                 <p><strong>World Championships:</strong> 9</p>
             </div>
-            <div class="driver-info">
-                <img src="oscar-piastri.jpg" alt="Oscar Piastri">
-                <p><strong>Oscar Piastri</strong> - Australia</p>
-                <p><strong>Podiums:</strong> 10</p>
-                <p><strong>Points:</strong> 389</p>
-            </div>
-            <div class="driver-info">
-                <img src="lando-norris.jpg" alt="Lando Norris">
-                <p><strong>Lando Norris</strong> - United Kingdom</p>
-                <p><strong>Podiums:</strong> 26</p>
-                <p><strong>Points:</strong> 1007</p>
-            </div>
+            <!-- ======= Oscar Piastri Section (Driver 1 Config) ======= -->
+            <section id="piastri" class="staff">
+                <div class="container-fluid" data-aos="fade-up">
+                    <div class="driver-1">
+                        <div class="driver-image" style='background-image: url("img/piastri.avif");'></div>
+                        <div class="driver-facts">
+                            <h3>Our drivers: <strong>OSCAR PIASTRI</strong></h3>
+                            <div class="accordion accordion-flush" id="piastri-facts">
+                                <div class="accordion-item">
+                                    <h3 class="accordion-header">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#piastri-fact-1">
+                                            <i class="bi bi-question-circle question-icon"></i>
+                                            FACT 1 - F2 & F3 Champion
+                                        </button>
+                                    </h3>
+                                    <div id="piastri-fact-1" class="accordion-collapse collapse" data-bs-parent="#piastri-facts">
+                                        <div class="accordion-body">
+                                            Piastri won the Formula 2 and Formula 3 championships back-to-back, showing his incredible talent.
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="accordion-item">
+                                    <h3 class="accordion-header">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#piastri-fact-2">
+                                            <i class="bi bi-question-circle question-icon"></i>
+                                            FACT 2 - Mclaren's Rising Star
+                                        </button>
+                                    </h3>
+                                    <div id="piastri-fact-2" class="accordion-collapse collapse" data-bs-parent="#piastri-facts">
+                                        <div class="accordion-body">
+                                            He signed with Mclaren in 2023 and immediately made an impact by finishing on the podium in his rookie season.
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="accordion-item">
+                                    <h3 class="accordion-header">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#piastri-fact-3">
+                                            <i class="bi bi-question-circle question-icon"></i>
+                                            FACT 3 - One of Australia's Best
+                                        </button>
+                                    </h3>
+                                    <div id="piastri-fact-3" class="accordion-collapse collapse" data-bs-parent="#piastri-facts">
+                                        <div class="accordion-body">
+                                            He is part of Australia's elite racing talent alongside drivers like Daniel Ricciardo and Mark Webber.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ======= Lando Norris Section (Driver 2 Config) ======= -->
+            <section id="norris" class="staff">
+                <div class="container-fluid" data-aos="fade-up">
+                    <div class="driver-2">
+                        <!-- Facts on the Left -->
+                        <div class="driver-facts">
+                            <h3>Our drivers: <strong>LANDO NORRIS</strong></h3>
+                            <div class="accordion accordion-flush" id="norris-facts">
+                                <div class="accordion-item">
+                                    <h3 class="accordion-header">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#norris-fact-1">
+                                            <i class="bi bi-question-circle question-icon"></i>
+                                            FACT 1 - Mclaren's Young Leader
+                                        </button>
+                                    </h3>
+                                    <div id="norris-fact-1" class="accordion-collapse collapse" data-bs-parent="#norris-facts">
+                                        <div class="accordion-body">
+                                            Norris has led Mclaren’s charge since 2019 and is one of the brightest young talents on the grid.
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="accordion-item">
+                                    <h3 class="accordion-header">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#norris-fact-2">
+                                            <i class="bi bi-question-circle question-icon"></i>
+                                            FACT 2 - 4th in the Championship
+                                        </button>
+                                    </h3>
+                                    <div id="norris-fact-2" class="accordion-collapse collapse" data-bs-parent="#norris-facts">
+                                        <div class="accordion-body">
+                                            He finished 4th in the 2023 season, showing Mclaren’s improvements and his potential to challenge for wins.
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="accordion-item">
+                                    <h3 class="accordion-header">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#norris-fact-3">
+                                            <i class="bi bi-question-circle question-icon"></i>
+                                            FACT 3 - Twitch Streamer
+                                        </button>
+                                    </h3>
+                                    <div id="norris-fact-3" class="accordion-collapse collapse" data-bs-parent="#norris-facts">
+                                        <div class="accordion-body">
+                                            Norris is popular for his Twitch streams, connecting with fans and sharing his racing insights online.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="driver-image" style='background-image: url("img/norris.avif");'></div>
+                    </div>
+                </div>
+            </section>
         </div>
 
         <!-- Red Bull Racing Section -->
@@ -115,18 +309,115 @@
                 <p><strong>Chassis:</strong> RB21</p>
                 <p><strong>World Championships:</strong> 6</p>
             </div>
-            <div class="driver-info">
-                <img src="max-verstappen.jpg" alt="Max Verstappen">
-                <p><strong>Max Verstappen</strong> - Netherlands</p>
-                <p><strong>Podiums:</strong> 112</p>
-                <p><strong>Points:</strong> 3023.5</p>
-            </div>
-            <div class="driver-info">
-                <img src="liam-lawson.jpg" alt="Liam Lawson">
-                <p><strong>Liam Lawson</strong> - New Zealand</p>
-                <p><strong>Podiums:</strong> 0</p>
-                <p><strong>Points:</strong> 6</p>
-            </div>
+            <!-- ======= Max Verstappen Section (Driver 1 Config) ======= -->
+            <section id="verstappen" class="staff">
+                <div class="container-fluid" data-aos="fade-up">
+                    <div class="driver-1">
+                        <div class="driver-image" style='background-image: url("img/verstappen.avif");'></div>
+                        <div class="driver-facts">
+                            <h3>Our drivers: <strong>MAX VERSTAPPEN</strong></h3>
+                            <div class="accordion accordion-flush" id="verstappen-facts">
+                                <div class="accordion-item">
+                                    <h3 class="accordion-header">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#verstappen-fact-1">
+                                            <i class="bi bi-question-circle question-icon"></i>
+                                            FACT 1 - Youngest F1 Winner
+                                        </button>
+                                    </h3>
+                                    <div id="verstappen-fact-1" class="accordion-collapse collapse" data-bs-parent="#verstappen-facts">
+                                        <div class="accordion-body">
+                                            Max Verstappen became the youngest driver to win a Formula 1 Grand Prix at **18 years old** in 2016.
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="accordion-item">
+                                    <h3 class="accordion-header">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#verstappen-fact-2">
+                                            <i class="bi bi-question-circle question-icon"></i>
+                                            FACT 2 - Three-Time Champion
+                                        </button>
+                                    </h3>
+                                    <div id="verstappen-fact-2" class="accordion-collapse collapse" data-bs-parent="#verstappen-facts">
+                                        <div class="accordion-body">
+                                            He won **three consecutive World Championships** in **2021, 2022, and 2023**, dominating the sport.
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="accordion-item">
+                                    <h3 class="accordion-header">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#verstappen-fact-3">
+                                            <i class="bi bi-question-circle question-icon"></i>
+                                            FACT 3 - Most Wins in a Season
+                                        </button>
+                                    </h3>
+                                    <div id="verstappen-fact-3" class="accordion-collapse collapse" data-bs-parent="#verstappen-facts">
+                                        <div class="accordion-body">
+                                            Max set a record for the **most wins in a single season (19 wins in 2023)**, showcasing Red Bull’s dominance.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ======= Liam Lawson Section (Driver 2 Config) ======= -->
+            <section id="lawson" class="staff">
+                <div class="container-fluid" data-aos="fade-up">
+                    <div class="driver-2">
+                        <div class="driver-facts">
+                            <h3>Our drivers: <strong>LIAM LAWSON</strong></h3>
+                            <div class="accordion accordion-flush" id="lawson-facts">
+                                <div class="accordion-item">
+                                    <h3 class="accordion-header">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#lawson-fact-1">
+                                            <i class="bi bi-question-circle question-icon"></i>
+                                            FACT 1 - Standout Rookie
+                                        </button>
+                                    </h3>
+                                    <div id="lawson-fact-1" class="accordion-collapse collapse" data-bs-parent="#lawson-facts">
+                                        <div class="accordion-body">
+                                            Liam Lawson impressed on his F1 debut in 2023, scoring points as a substitute driver.
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="accordion-item">
+                                    <h3 class="accordion-header">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#lawson-fact-2">
+                                            <i class="bi bi-question-circle question-icon"></i>
+                                            FACT 2 - Super Formula Success
+                                        </button>
+                                    </h3>
+                                    <div id="lawson-fact-2" class="accordion-collapse collapse" data-bs-parent="#lawson-facts">
+                                        <div class="accordion-body">
+                                            He competed in **Super Formula Japan**, finishing **2nd in the championship**, proving his adaptability.
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="accordion-item">
+                                    <h3 class="accordion-header">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#lawson-fact-3">
+                                            <i class="bi bi-question-circle question-icon"></i>
+                                            FACT 3 - Future Red Bull Star?
+                                        </button>
+                                    </h3>
+                                    <div id="lawson-fact-3" class="accordion-collapse collapse" data-bs-parent="#lawson-facts">
+                                        <div class="accordion-body">
+                                            Many believe he could replace a full-time Red Bull Racing seat in the future, thanks to his rapid progression.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="driver-image" style='background-image: url("img/lawson.avif");'></div>
+                    </div>
+                </div>
+            </section>
         </div>
 
     </div>
