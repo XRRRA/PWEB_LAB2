@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>F1 World - The Ultimate Formula 1 Experience</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600&family=Urbanist:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+
+<header>
+    <nav>
+        <div class="logo">
+            <img src="f1-logo.png" alt="F1 Logo">
+            F1 World
+        </div>
+        <div class="nav-links">
+            <a href="#teams"><i class="fas fa-users"></i> Teams</a>
+            <a href="#races"><i class="fas fa-road"></i> Races</a>
+            <a href="#history"><i class="fas fa-history"></i> History</a>
+            <a href="#contact"><i class="fas fa-envelope"></i> Contact</a>
+        </div>
+    </nav>
+</header>
+
+<section id="hero">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+        <h1>Welcome to <span class="highlight">F1 World</span></h1>
+        <p class="hero-subtitle">Experience the adrenaline of Formula 1</p>
+        <div class="hero-buttons">
+            <a href="#teams" class="cta-button">Explore Teams <i class="fas fa-arrow-right"></i></a>
+            <a href="#races" class="ghost-button">Upcoming Races <i class="fas fa-flag"></i></a>
+        </div>
+    </div>
+</section>
+
+<section id="teams-slider">
+    <div class="container">
+        <h2>F1 Teams 2025</h2>
+        <p>Discover everything you need to know about this year's Formula 1 teams - drivers, podium finishes, points earned, and championship titles.</p>
+        <div class="teams-slider">
+            <div class="team"><h3>Ferrari</h3><p>Drivers: Charles Leclerc, Lewis Hamilton</p></div>
+            <div class="team"><h3>McLaren</h3><p>Drivers: Oscar Piastri, Lando Norris</p></div>
+            <div class="team"><h3>Red Bull Racing</h3><p>Drivers: Max Verstappen, Liam Lawson</p></div>
+        </div>
+    </div>
+</section>
+
+<section id="top-teams">
+    <div class="container">
+        <h2>Top 3 Teams</h2>
+
+        <!-- Ferrari Section -->
+        <div class="team-section" id="ferrari">
+            <h3>Ferrari</h3>
+            <img src="img/ferrari.avif" alt="Ferrari Car">
+            <div class="team-info">
+                <p><strong>Base:</strong> Maranello, Italy</p>
+                <p><strong>Team Chief:</strong> Frédéric Vasseur</p>
+                <p><strong>Technical Chief:</strong> Loic Serra / Enrico Gualtieri</p>
+                <p><strong>Chassis:</strong> SF-25</p>
+                <p><strong>World Championships:</strong> 16</p>
+            </div>
+            <div class="driver-info">
+                <img src="charles-leclerc.jpg" alt="Charles Leclerc">
+                <p><strong>Charles Leclerc</strong> - Monaco</p>
+                <p><strong>Podiums:</strong> 43</p>
+                <p><strong>Points:</strong> 1430</p>
+            </div>
+            <div class="driver-info">
+                <img src="lewis-hamilton.jpg" alt="Lewis Hamilton">
+                <p><strong>Lewis Hamilton</strong> - United Kingdom</p>
+                <p><strong>Podiums:</strong> 202</p>
+                <p><strong>Points:</strong> 4862.5</p>
+            </div>
+        </div>
+
+        <!-- McLaren Section -->
+        <div class="team-section" id="mclaren">
+            <h3>McLaren</h3>
+            <img src="img/mclaren.avif" alt="McLaren Car">
+            <div class="team-info">
+                <p><strong>Base:</strong> Woking, United Kingdom</p>
+                <p><strong>Team Chief:</strong> Andrea Stella</p>
+                <p><strong>Technical Chief:</strong> Peter Prodromou / Neil Houldey</p>
+                <p><strong>Chassis:</strong> MCL39</p>
+                <p><strong>World Championships:</strong> 9</p>
+            </div>
+            <div class="driver-info">
+                <img src="oscar-piastri.jpg" alt="Oscar Piastri">
+                <p><strong>Oscar Piastri</strong> - Australia</p>
+                <p><strong>Podiums:</strong> 10</p>
+                <p><strong>Points:</strong> 389</p>
+            </div>
+            <div class="driver-info">
+                <img src="lando-norris.jpg" alt="Lando Norris">
+                <p><strong>Lando Norris</strong> - United Kingdom</p>
+                <p><strong>Podiums:</strong> 26</p>
+                <p><strong>Points:</strong> 1007</p>
+            </div>
+        </div>
+
+        <!-- Red Bull Racing Section -->
+        <div class="team-section" id="redbull">
+            <h3>Red Bull Racing</h3>
+            <img src="img/redbull.avif" alt="Red Bull Car">
+            <div class="team-info">
+                <p><strong>Base:</strong> Milton Keynes, United Kingdom</p>
+                <p><strong>Team Chief:</strong> Christian Horner</p>
+                <p><strong>Technical Chief:</strong> Pierre Waché</p>
+                <p><strong>Chassis:</strong> RB21</p>
+                <p><strong>World Championships:</strong> 6</p>
+            </div>
+            <div class="driver-info">
+                <img src="max-verstappen.jpg" alt="Max Verstappen">
+                <p><strong>Max Verstappen</strong> - Netherlands</p>
+                <p><strong>Podiums:</strong> 112</p>
+                <p><strong>Points:</strong> 3023.5</p>
+            </div>
+            <div class="driver-info">
+                <img src="liam-lawson.jpg" alt="Liam Lawson">
+                <p><strong>Liam Lawson</strong> - New Zealand</p>
+                <p><strong>Podiums:</strong> 0</p>
+                <p><strong>Points:</strong> 6</p>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<footer>
+    <div class="container">
+        <p>&copy; 2025 F1 World. All rights reserved.</p>
+    </div>
+</footer>
+
+</body>
+</html>

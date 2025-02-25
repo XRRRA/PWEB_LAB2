@@ -1,0 +1,201 @@
+/* Formula 1 Color Palette */
+:root {
+    --primary-color: #D50000; /* Ferrari Red */
+    --secondary-color: #141414; /* Dark Black */
+    --accent-color: #C0C0C0; /* Silver */
+    --background-color: #1E1E1E; /* Dark Gray */
+    --text-color: #EAEAEA;
+    --button-gradient: linear-gradient(45deg, #D50000, #141414);
+}
+
+/* Global Styles */
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Orbitron', sans-serif;
+    color: var(--text-color);
+    background-color: var(--background-color);
+}
+
+/* Header */
+header {
+    background: rgba(20, 20, 20, 0.95);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    font-size: 28px;
+    font-weight: 600;
+    color: var(--primary-color);
+}
+
+.logo img {
+    height: 40px;
+    margin-right: 10px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: var(--text-color);
+    margin-left: 25px;
+    font-weight: 600;
+    transition: 0.3s ease-in-out;
+}
+
+.nav-links a:hover {
+    color: var(--primary-color);
+    text-shadow: 0 0 10px var(--primary-color);
+}
+
+/* Hero Section */
+#hero {
+    height: 100vh;
+    background: url('img/f1-track.png') center/cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+}
+
+.hero-content {
+    position: relative;
+    color: var(--text-color);
+    z-index: 1;
+}
+
+.hero-content h1 {
+    font-size: 60px;
+    font-weight: bold;
+}
+
+.highlight {
+    color: var(--primary-color);
+    text-shadow: 0px 0px 10px var(--primary-color);
+}
+
+.hero-buttons {
+    margin-top: 20px;
+}
+
+.cta-button, .ghost-button {
+    padding: 12px 24px;
+    border-radius: 30px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.cta-button {
+    background: var(--button-gradient);
+    color: white;
+}
+
+.cta-button:hover {
+    transform: scale(1.1);
+}
+
+.ghost-button {
+    border: 2px solid white;
+    color: white;
+}
+
+.ghost-button:hover {
+    background: white;
+    color: var(--primary-color);
+}
+
+/* Teams Slider */
+.teams-slider {
+    display: flex;
+    overflow-x: auto;
+    padding: 20px;
+    gap: 15px;
+}
+
+.team {
+    background: var(--secondary-color);
+    padding: 20px;
+    border-radius: 10px;
+    min-width: 250px;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.team:hover {
+    transform: scale(1.05);
+}
+
+/* Team Sections */
+.team-section {
+    background: var(--secondary-color);
+    padding: 40px;
+    margin: 20px 0;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0px 10px 30px rgba(255, 0, 0, 0.2);
+}
+
+.team-section h3 {
+    font-size: 32px;
+    color: var(--primary-color);
+    margin-bottom: 20px;
+}
+
+.team-section img {
+    width: 100%;
+    height: 400px; /* Fixed height */
+    object-fit: cover; /* Ensures the image covers the area without distortion */
+    border-radius: 0; /* Removes border-radius for a full-width effect */
+    display: block; /* Ensures no extra spacing around the image */
+}
+
+
+.driver-info {
+    background: var(--accent-color);
+    color: var(--secondary-color);
+    padding: 20px;
+    border-radius: 10px;
+    display: inline-block;
+    margin: 10px;
+}
+
+.driver-info img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+/* Footer */
+footer {
+    background: var(--primary-color);
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
