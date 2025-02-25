@@ -4,6 +4,8 @@
 
 This project is a **Formula 1 interactive website**, designed as part of a laboratory assignment. The website presents detailed information about **Formula 1 teams, drivers, upcoming races, history, and contact details**. The goal of this project is to create a **modern, visually appealing, and interactive** experience for F1 enthusiasts using web technologies.
 
+The project was deployed using vercel: https://pweb-lab-2.vercel.app/
+
 ## 2. Features
 
 ### 2.1 Hero Section
