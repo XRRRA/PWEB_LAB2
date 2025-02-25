@@ -304,6 +304,368 @@ nav {
     margin-bottom: 10px;
 }
 
+/* ======= General Section Styling ======= */
+.races, .history, .contact {
+    padding: 80px 0;
+    text-align: center;
+}
+
+.races h2, .history h2, .contact h2 {
+    font-size: 36px;
+    color: var(--primary-color);
+    margin-bottom: 20px;
+}
+
+/* ======= RACES SECTION ======= */
+.races {
+    padding: 80px 0;
+    text-align: center;
+    background: var(--background-color);
+}
+
+.races h2 {
+    font-size: 36px;
+    color: var(--primary-color);
+    margin-bottom: 20px;
+}
+
+/* ======= RACE GRID ======= */
+.race-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px; /* More spacing between race cards */
+    justify-content: center;
+    margin-top: 20px;
+    padding: 0 30px;
+}
+
+/* ======= RACE CARDS ======= */
+.race-card {
+    background: white;
+    padding: 20px;
+    border: 2px solid var(--accent-color);
+    border-radius: 15px;
+    text-align: left;
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
+    position: relative;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.race-card:hover {
+    transform: scale(1.04);
+    box-shadow: 0px 8px 20px rgba(255, 0, 0, 0.8);
+}
+
+/* ======= RACE HEADER ======= */
+.race-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid var(--accent-color);
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+}
+
+.round-title {
+    color: red;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.race-date {
+    background: black;
+    color: white;
+    padding: 5px 12px;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.race-date span {
+    display: block;
+    font-size: 24px;
+}
+
+/* ======= RACE DETAILS ======= */
+.race-card h3 {
+    color: black;
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.race-card p {
+    font-size: 14px;
+    color: #141414;
+    margin-bottom: 15px;
+}
+
+/* ======= FLAG IMAGES ======= */
+.race-flag {
+    width: 28px;
+    height: 18px;
+    border: 1px solid #1E1E1E;
+    border-radius: 2px;
+}
+
+/* ======= TRACK & TESTING IMAGES ======= */
+.track-outline {
+    width: 90%;
+    height: auto;
+    filter: grayscale(100%);
+    opacity: 0.85;
+    margin-top: 15px;
+}
+
+.testing-image {
+    width: 90%;
+    height: auto;
+    margin-top: 10px;
+    border-radius: 8px;
+}
+
+/* ======= HISTORY SECTION STYLING ======= */
+.history {
+    background: url('img/f1-dark-pattern.jpg') center/cover no-repeat;
+    padding: 100px 0;
+    color: var(--text-color);
+    position: relative;
+    text-align: center;
+    overflow: hidden;
+}
+
+/* Add a subtle animated glow */
+.history::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(rgba(255, 0, 0, 0.2), rgba(0, 0, 0, 0.8));
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+/* Neon Effect for Title */
+.neon-title {
+    font-size: 42px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: red;
+    text-shadow: 0 0 10px red, 0 0 20px red, 0 0 30px rgba(255, 0, 0, 0.5);
+    position: relative;
+    z-index: 2;
+    margin-bottom: 20px;
+}
+
+.history-subtitle {
+    font-size: 18px;
+    max-width: 800px;
+    margin: 0 auto 50px;
+    color: var(--accent-color);
+    font-weight: 300;
+}
+
+/* Timeline Style */
+.history-timeline {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    position: relative;
+    z-index: 2;
+}
+
+/* Timeline Event */
+.history-event {
+    display: flex;
+    align-items: center;
+    width: 70%;
+    background: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    border-radius: 10px;
+    border-left: 5px solid red;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Year Circle */
+.history-year {
+    font-size: 28px;
+    font-weight: 800;
+    color: white;
+    background: red;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-shadow: 0 0 5px white;
+    margin-right: 20px;
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Content Styling */
+.history-content {
+    flex: 1;
+    text-align: left;
+}
+
+.history-content h3 {
+    color: white;
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+.history-content p {
+    color: var(--text-color);
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+/* Hover Effect */
+.history-event:hover {
+    border-left: 5px solid white;
+    background: rgba(255, 0, 0, 0.2);
+    transform: scale(1.02);
+}
+
+.history-year:hover {
+    transform: scale(1.2);
+    background: white;
+    color: red;
+}
+
+/* ======= CONTACT SECTION STYLING ======= */
+.contact {
+    background: url('img/f1-contact-bg.jpg') center/cover no-repeat;
+    padding: 100px 0;
+    color: var(--text-color);
+    position: relative;
+    text-align: center;
+    overflow: hidden;
+}
+
+/* Subtle glowing animated background */
+.contact::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(rgba(255, 0, 0, 0.2), rgba(0, 0, 0, 0.8));
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+/* Neon Effect for Title */
+.neon-title {
+    font-size: 42px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: red;
+    text-shadow: 0 0 10px red, 0 0 20px red, 0 0 30px rgba(255, 0, 0, 0.5);
+    position: relative;
+    z-index: 2;
+    margin-bottom: 20px;
+}
+
+.contact-subtitle {
+    font-size: 18px;
+    max-width: 800px;
+    margin: 0 auto 50px;
+    color: var(--accent-color);
+    font-weight: 300;
+}
+
+/* Contact Info Section */
+.contact-info {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-bottom: 50px;
+    position: relative;
+    z-index: 2;
+}
+
+.contact-item {
+    background: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    color: white;
+    font-size: 16px;
+    transition: all 0.3s ease-in-out;
+    border-left: 5px solid red;
+}
+
+.contact-item i {
+    font-size: 24px;
+    color: red;
+}
+
+/* Hover Effect */
+.contact-item:hover {
+    border-left: 5px solid white;
+    background: rgba(255, 0, 0, 0.2);
+    transform: scale(1.05);
+}
+
+/* Contact Form */
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    position: relative;
+    z-index: 2;
+}
+
+/* Input Fields */
+.contact-form input,
+.contact-form textarea {
+    width: 80%;
+    padding: 12px;
+    font-size: 16px;
+    color: white;
+    background: rgba(255, 0, 0, 0.1);
+    border: 2px solid red;
+    border-radius: 5px;
+    transition: all 0.3s ease-in-out;
+    text-align: center;
+}
+
+/* Input Focus Effect */
+.contact-form input:focus,
+.contact-form textarea:focus {
+    border-color: white;
+    box-shadow: 0 0 10px rgba(255, 0, 0, 0.8);
+}
+
+/* Button Styling */
+.cta-button {
+    padding: 14px 30px;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    background: var(--button-gradient);
+    color: white;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.cta-button:hover {
+    background: white;
+    color: red;
+    transform: scale(1.1);
+}
+
 /* Footer */
 footer {
     background: var(--primary-color);
