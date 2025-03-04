@@ -8,6 +8,51 @@
     --button-gradient: linear-gradient(45deg, #D50000, #141414);
 }
 
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .hero-title {
+        font-size: 40px;
+    }
+
+    .hero-subtitle {
+        font-size: 18px;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+    }
+
+    /* Mobile-Only Section */
+    .mobile-only {
+        display: block;
+        background: var(--secondary-color);
+        padding: 40px 20px;
+        text-align: center;
+        color: var(--text-color);
+        border-top: 4px solid var(--primary-color);
+    }
+
+    .mobile-only h2 {
+        font-size: 28px;
+        margin-bottom: 10px;
+    }
+
+    .pit-stop-image {
+        width: 100%;
+        max-width: 400px;
+        border-radius: 10px;
+        margin: 20px auto;
+        display: block;
+    }
+}
+
+/* Hide Mobile Section on Desktop */
+@media (min-width: 769px) {
+    .mobile-only {
+        display: none;
+    }
+}
+
 html {
     scroll-behavior: smooth;
 }
