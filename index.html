@@ -16,14 +16,27 @@
         <div class="logo">
             <img src="img/f1-logo.png" alt="F1 Logo">
         </div>
+
         <div class="nav-links">
-            <a href="#teams-list"><i class="fas fa-users"></i> Teams</a>
-            <a href="#races"><i class="fas fa-road"></i> Races</a>
-            <a href="#history"><i class="fas fa-history"></i> History</a>
-            <a href="#contact"><i class="fas fa-envelope"></i> Contact</a>
+            <a href="#teams-list">Teams</a>
+            <a href="#races">Races</a>
+            <a href="#history">History</a>
+            <a href="#contact">Contact</a>
+        </div>
+
+        <div class="burger-menu" onclick="toggleMenu()">
+            <i class="fas fa-bars"></i>
         </div>
     </nav>
+
+    <div class="mobile-menu">
+        <a href="#teams-list">Teams</a>
+        <a href="#races">Races</a>
+        <a href="#history">History</a>
+        <a href="#contact">Contact</a>
+    </div>
 </header>
+
 
 <section id="hero">
     <div class="hero-overlay"></div>
@@ -35,6 +48,13 @@
             <a href="#races" class="ghost-button">Upcoming Races <i class="fas fa-flag"></i></a>
         </div>
     </div>
+</section>
+
+<section id="pit-stop-challenge" class="mobile-only">
+    <h2>🚀 F1 Pit Stop Challenge - Mobile only</h2>
+    <p>Think you can beat Red Bull’s 1.82-second pit stop record? Learn about pit stops and take our F1 trivia quiz!</p>
+    <img src="img/f1-pit-stop.jpg" alt="F1 Pit Stop" class="pit-stop-image">
+    <a href="#quiz" class="cta-button">Take the Challenge</a>
 </section>
 
 <section id="teams-list" class="teams-list">
@@ -737,6 +757,11 @@
         </div>
     </div>
 </footer>
-
 </body>
+<script>
+    function toggleMenu() {
+        const menu = document.querySelector('.mobile-menu');
+        menu.style.display = (menu.style.display === 'block') ? 'none' : 'block';
+    }
+</script>
 </html>
