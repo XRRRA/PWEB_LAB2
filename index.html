@@ -49,6 +49,11 @@
         </div>
     </div>
 </section>
+<!-- F1 Mascot: Turbo the Pit Bot -->
+<div id="f1-mascot">
+    <img src="img/f1-mascot.png" alt="Turbo the Pit Bot">
+    <div class="mascot-message">Need help navigating the track? 🏎️</div>
+</div>
 
 <section id="pit-stop-challenge" class="mobile-only">
     <h2>🚀 F1 Pit Stop Challenge - Mobile only</h2>
@@ -763,5 +768,10 @@
         const menu = document.querySelector('.mobile-menu');
         menu.style.display = (menu.style.display === 'block') ? 'none' : 'block';
     }
+    document.addEventListener("DOMContentLoaded", function () {
+        setTimeout(function () {
+            document.getElementById("f1-mascot").classList.add("show");
+        }, 3000);
+    });
 </script>
 </html>
