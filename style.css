@@ -105,6 +105,65 @@ nav {
     text-shadow: 0 0 10px var(--primary-color);
 }
 
+/* Make the navigation bar responsive */
+@media (max-width: 768px) {
+    nav {
+        padding: 10px 20px;
+        position: relative;
+    }
+
+    /* Reduce logo size */
+    .logo img {
+        height: 30px;
+    }
+
+    /* Hide nav links on mobile */
+    .nav-links {
+        display: none;
+    }
+
+    /* Style for burger menu */
+    .burger-menu {
+        display: block;
+        font-size: 24px;
+        color: var(--text-color);
+        cursor: pointer;
+    }
+
+    /* Mobile Menu Styles */
+    .mobile-menu {
+        display: none;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background: var(--secondary-color);
+        padding: 10px 0;
+        text-align: center;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    }
+
+    .mobile-menu a {
+        display: block;
+        padding: 10px;
+        color: var(--text-color);
+        text-decoration: none;
+        font-size: 18px;
+    }
+
+    .mobile-menu a:hover {
+        background: var(--primary-color);
+    }
+}
+
+/* Hide burger menu on desktop */
+@media (min-width: 769px) {
+    .burger-menu {
+        display: none;
+    }
+}
+
+
 /* ======= HERO SECTION ======= */
 #hero {
     height: 100vh;
