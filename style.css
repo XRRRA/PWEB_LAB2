@@ -56,6 +56,12 @@
     }
 }
 
+.container {
+    max-width: none !important;
+    width: 100% !important;
+    margin: 0 auto;
+}
+
 html {
     scroll-behavior: smooth;
 }
@@ -694,6 +700,13 @@ nav {
     }
 }
 
+.accordion-button {
+    width: 100%;
+    cursor: pointer;
+}
+.accordion-collapse.show {
+    display: block;
+}
 
 .driver-info {
     background: var(--accent-color);

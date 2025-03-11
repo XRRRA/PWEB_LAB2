@@ -54,10 +54,45 @@ To enhance the experience for mobile users, a **special mobile-only section** wa
 ## 3.3 Website Mascot Implementation
 To make the website more interactive, a mascot named **Turbo** was added. Turbo is a **Formula 1-inspired animated character** that appears in the bottom-left corner after a short delay.
 
-### 🚀 **Turbo's Features**
-- ✅ **Appears with a delay** after 3 seconds.
-- ✅ **Displays a dynamic welcome message** when hovered.
-- ✅ **Animated movements** (tilting, jumping).
+### **Turbo's Features**
+- **Appears with a delay** after 3 seconds.
+- **Displays a dynamic welcome message** when hovered.
+- **Animated movements** (tilting, jumping).
+---
+# 4. Laboratory Work Nr. 4 - New Features & Framework Implementation
+
+## 4.1 **Event Highlight Section**
+A new section titled **"F1 Grand Prix Highlight"** was added to provide a **featured race experience**, highlighting exclusive **behind-the-scenes insights** from the latest Grand Prix.
+
+### **Implemented Features:**
+- **Visually appealing layout** with **text on the left** and a **featured Grand Prix image on the right**.
+- **Modern button styling** for navigation to race-related content.
+- **Responsive scaling** for better visibility on mobile and desktop.
+
+## 4.2 **Fan Zone Section**
+A dedicated **Fan Zone** was introduced to **engage F1 enthusiasts**, featuring testimonials from fans worldwide.
+
+### 🔧 **Implemented Features:**
+- **Three-column layout** displaying different fan testimonials.
+- **Card-style containers** with a **dark gray background** for improved readability.
+- **Dynamic font styling** to differentiate quotes from fan names.
+- **Responsive design** for mobile and desktop users.
+
+## 4.3 **Driver Fact Section Enhancements**
+The previous **accordion-style fact displays** for drivers were modified:
+- **Removed collapsible behavior** (facts are now **always visible**).
+- **Updated background colors for driver facts**:
+    - **Fact headers remain red (`bg-red-600`)**
+    - **Fact descriptions now have a dark blue background (`bg-blue-900`)** for improved readability.
+
+These updates enhance the user experience by providing a **cleaner**, more **consistent**, and **easily readable** layout.
+
+## 4.4 **Framework Implementation**
+A **CSS framework** was introduced to improve styling consistency and maintainability.
+- **Grid layouts, buttons, and typography were adjusted** using the framework’s pre-defined styles.
+- **Improved responsiveness** by leveraging **utility classes** and **pre-configured breakpoints**.
+- **Simplified CSS file structure**, reducing custom styling where possible.
+
 ---
 
 ## Screenshots
@@ -73,6 +108,8 @@ To make the website more interactive, a mascot named **Turbo** was added. Turbo 
 ![F1 History](img/screenshots/history-section.png)
 ### Contact Form
 ![Contact Form](img/screenshots/contact-form.png)
+### Framework Sections
+![Contact Form](img/screenshots/framework_sections.png)
 
 ### Hero Section (Mobile)
 <img src="img/screenshots/hero-section-mobile.jpg" style="width:30%; display:block; margin:auto;" alt="mob-hero">
